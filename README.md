@@ -181,7 +181,8 @@ Additional pages can be created by placing MDX files inside `contents/pages`, e.
 
 ```md
 ---
-title: About
+title: About© 2021 by Lupin. All rights reserved.
+Theme by LekoArts
 slug: "/about"
 ---
 ```

@@ -6,7 +6,14 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Daficco`,
+    siteTitleAlt: `Daficco - The Nomad's Social Nexus`,
+    siteUrl: `https://dafic.co`,
+    siteDescription: `A social nexus for nomads.`,
+    siteHeadline: `Daficco - The Nomad's Social Nexus`,
+    siteImage: `/sticker.png`,
+    siteLanguage: `en`,
+    author: `Tom Tijerina`,
   },
   plugins: [
     {
@@ -15,8 +22,8 @@ module.exports = {
       options: {
         navigation: [
           {
-            title: `Blog`,
-            slug: `/blog`,
+            title: `Events`,
+            slug: `/events`,
           },
           {
             title: `About`,
@@ -25,12 +32,16 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Facebook`,
+            url: `https://www.facebook.com/Daficco-102768448570113`,
           },
           {
             name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            url: `https://www.instagram.com/daficco/`,
+          },
+          {
+            name: `Reddit`,
+            url: `https://www.reddit.com/u/daficco/`,
           },
         ],
       },
@@ -45,22 +56,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Daficco - The Nomad's Social Nexus`,
+        short_name: `Daficco`,
+        description: `A way for nomads to find events to meetup with other nomads when they feel like being social.`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#6B46C1`,
+        theme_color: `#6B46C1`, 
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
+            src: `/sticker.png`,
             sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
             type: `image/png`,
           },
         ],
